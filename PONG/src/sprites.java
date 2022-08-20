@@ -17,6 +17,7 @@ public int getxPosition() {
 public void setxPosition(int xPosition) {
 	this.xPosition = xPosition;
 }
+
 public int getyPosition() {
 	return yPosition;
 }
@@ -64,7 +65,8 @@ public Color getcolor() {
 public void setcolor(Color color) {
 	this.color = color;	
 }
-public void setXPosition(int newX, int panelWidth) {
+
+public void setxPosition(int newX, int panelWidth) {
     xPosition = newX;
     if(xPosition < 0) {
     	xPosition = 0;
@@ -72,7 +74,8 @@ public void setXPosition(int newX, int panelWidth) {
     	xPosition = panelWidth - width;
     }
 }
-public void setYPosition(int newY, int panelHeight) {
+
+public void setyPosition(int newY, int panelHeight) {
     yPosition = newY;
     if(yPosition < 0) {
     	yPosition = 0;
@@ -80,14 +83,17 @@ public void setYPosition(int newY, int panelHeight) {
     	yPosition = panelHeight - height;
     }
 }
+
 public void setInitialPosition(int initialX, int initialY) {
 	initialXPosition = initialX;
 	initialYPosition = initialY;
 }
+
 public void resetToInitialPosition() {
 	setxPosition(initialXPosition);
 	setyPosition(initialYPosition);
 }
+
 public Rectangle getRectangle() {
     return new Rectangle(getxPosition(), getyPosition(), getwidth(), getheight());
 }
