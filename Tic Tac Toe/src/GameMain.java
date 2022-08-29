@@ -182,7 +182,7 @@ public class GameMain extends JPanel implements MouseListener{
 				if (currentPlayer == Player.Cross) {
 					currentPlayer =  Player.Nought;
 				}
-				else {
+				else if (currentPlayer == Player.Nought){
 					currentPlayer = Player.Cross;
 				}
 			}             

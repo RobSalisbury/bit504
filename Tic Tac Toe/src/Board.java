@@ -33,7 +33,7 @@ public class Board {
 		   
 		for(int row = 0; row < GameMain.ROWS; ++row) {
 			for (int col = 0; col < GameMain.COLS; ++col) {             
-				if (cells[row][col].content == ) {
+				if (cells[row][col].content == Player.Empty) {
 					return false;   //WHAT WILL YOU RETURN IF THERE ARE ONE EMPTY CELL
 				}
 			}
